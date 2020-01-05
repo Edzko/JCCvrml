@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{558287CF-0757-4B7B-AD3B-8E78B33C4095}</ProjectGuid>
+    <RootNamespace>jccvrml</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28307.799</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/jccvrml.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_AUTOCPCOMEAIIMPORT_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/jccvrml.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation />
+      <BrowseInformationFile>.\Release/</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./jccvrml.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/jccvrml.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/jccvrml.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/jccvrml.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_VC80_UPGRADE=0x0600;_CRT_SECURE_NO_WARNINGS;_MBCS;_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRT</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CableGeom.cpp" />
+    <ClCompile Include="cortonactl.cpp" />
+    <ClCompile Include="CortonaEvents.cpp" />
+    <ClCompile Include="JCCJoy.cpp" />
+    <ClCompile Include="JCConfig.cpp" />
+    <ClCompile Include="jccvrml.cpp" />
+    <ClCompile Include="jccvrmlDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="jccvrml.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CableGeom.h" />
+    <ClInclude Include="control.h" />
+    <ClInclude Include="CortonaControl.h" />
+    <ClInclude Include="cortonactl.h" />
+    <ClInclude Include="CortonaDispatch.h" />
+    <ClInclude Include="CortonaEvents.h" />
+    <ClInclude Include="cortona_support.h" />
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="hlp\HTMLDefines.h" />
+    <ClInclude Include="hlp\MAPDefines.h" />
+    <ClInclude Include="JCCJoy.h" />
+    <ClInclude Include="JCConfig.h" />
+    <ClInclude Include="jccvrml.h" />
+    <ClInclude Include="jccvrmlDlg.h" />
+    <ClInclude Include="matrix.h" />
+    <ClInclude Include="model.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\geom.bmp" />
+    <Image Include="res\jccvrml.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hlp\Jccvrml_main.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\Jccvrml.chm" />
+    <None Include="hlp\Jccvrml.hhc" />
+    <None Include="hlp\Jccvrml.hhk" />
+    <CustomBuild Include="hlp\Jccvrml.hhp">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">start /wait hhc "hlp\Jccvrml.hhp"
+if not exist "hlp\Jccvrml.chm" goto :HelpError
+copy "hlp\Jccvrml.chm" "Jccvrml.chm"
+goto :HelpDone
+:HelpError
+echo hlp\Jccvrml.hhp : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Jccvrml.chm</Outputs>
+    </CustomBuild>
+    <None Include="res\jccvrml.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\CortonaControl.idl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CortonaControl.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CortonaControl.c</InterfaceIdentifierFileName>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</SuppressStartupBanner>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </GenerateTypeLibrary>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </TypeLibraryName>
+      <MinimumTargetSystem Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </MinimumTargetSystem>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </MkTypLibCompatible>
+      <DefaultCharType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DefaultCharType>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <RedirectOutputAndErrors Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </RedirectOutputAndErrors>
+      <OutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MSBuildProjectDirectory)</OutputDirectory>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </TargetEnvironment>
+      <StructMemberAlignment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </StructMemberAlignment>
+    </Midl>
+    <Midl Include="C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\CortonaDispatch.idl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CortonaDispatch.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CortonaDispatch.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </GenerateTypeLibrary>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </MkTypLibCompatible>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </SuppressStartupBanner>
+      <DefaultCharType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DefaultCharType>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </TypeLibraryName>
+      <MinimumTargetSystem Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </MinimumTargetSystem>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </TargetEnvironment>
+      <RedirectOutputAndErrors Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </RedirectOutputAndErrors>
+      <OutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MSBuildProjectDirectory)</OutputDirectory>
+    </Midl>
+    <Midl Include="C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\Cortona_support.idl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Cortona_support.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Cortona_support.c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </GenerateTypeLibrary>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </MkTypLibCompatible>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </SuppressStartupBanner>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </TypeLibraryName>
+      <DefaultCharType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DefaultCharType>
+      <StructMemberAlignment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </StructMemberAlignment>
+      <RedirectOutputAndErrors Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </RedirectOutputAndErrors>
+      <MinimumTargetSystem Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </MinimumTargetSystem>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">midl /Oicf /I "C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include" /h "CortonaControl.h" /iid "CortonaControl.c"   "$(InputPath)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)CortonaControl.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </TargetEnvironment>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(InputPath) %(AdditionalOptions)</AdditionalOptions>
+      <OutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MSBuildProjectDirectory)</OutputDirectory>
+    </Midl>
+    <Midl Include="C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\Shelley.idl">
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Shelley.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Shelley.c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </GenerateTypeLibrary>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </TypeLibraryName>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </MkTypLibCompatible>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </SuppressStartupBanner>
+      <DefaultCharType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DefaultCharType>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </TargetEnvironment>
+      <OutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MSBuildProjectDirectory)</OutputDirectory>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
+      <StructMemberAlignment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </StructMemberAlignment>
+      <MinimumTargetSystem Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </MinimumTargetSystem>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="jccvrml.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

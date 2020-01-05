@@ -1,0 +1,23 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=Jccvrml.chm
+Contents file=Jccvrml.hhc
+Default topic=Jccvrml_main.HTM
+Display compile progress=No
+Full-text search=Yes
+Index file=Jccvrml.hhk
+Language=0x409 English (United States)
+
+
+[FILES]
+Jccvrml_main.htm
+
+[ALIAS]
+HIDD_JCCVRML_DIALOG=Jccvrml_main.htm
+
+[MAP]
+#include HTMLDefines.h
+
+[INFOTYPES]
+

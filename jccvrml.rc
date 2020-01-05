@@ -1,0 +1,395 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\jccvrml.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\jccvrml.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_JCCVRML_DIALOG DIALOGEX 0, 0, 482, 329
+STYLE DS_SETFONT | DS_3DLOOK | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Jumbo Crane Animation"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,7,231,67,14
+    RTEXT           "Wagon",IDC_STATIC,7,73,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_SKEW,37,101,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SWING,37,86,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WX,37,72,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POS_TROLLEY,7,15,63,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Simulation Time:",IDC_STATIC,7,7,54,8
+    RTEXT           "Swing",IDC_STATIC,8,89,25,10,SS_CENTERIMAGE
+    RTEXT           "Skew",IDC_STATIC,7,103,25,10,SS_CENTERIMAGE
+    RTEXT           "Trolley",IDC_STATIC,7,57,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_XT,37,57,35,12,ES_AUTOHSCROLL
+    RTEXT           "Length",IDC_STATIC,7,42,25,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_L,37,42,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Simulation Output:",IDC_STATIC,7,30,68,86
+    EDITTEXT        IDC_CGZ,37,131,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MASS,37,146,35,12,ES_AUTOHSCROLL
+    RTEXT           "CG_Z",IDC_STATIC,7,132,25,10,SS_CENTERIMAGE
+    RTEXT           "Mass",IDC_STATIC6,7,146,25,10,SS_CENTERIMAGE
+    GROUPBOX        "Settings:",IDC_STATIC,7,119,68,43
+    PUSHBUTTON      "Help",IDC_JCCHELP,7,215,67,14
+    PUSHBUTTON      "Reset",IDC_RESET,7,200,67,13
+    CONTROL         "Slider1",IDC_OFFSET,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,7,162,68,20
+    PUSHBUTTON      "Configure",IDC_CONFIG,7,185,67,13
+    CONTROL         "",ID_CORTONA_CONTROL,
+                    "{86A88967-7A20-11D2-8EDA-00600818EDB1}",WS_TABSTOP,85,7,390,315
+END
+
+IDD_PASSWD DIALOG 0, 0, 124, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Container Crane Simulation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,36,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,36,50,14
+    EDITTEXT        IDC_PASSWD,7,17,110,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_STATIC,7,7,34,8
+END
+
+IDD_CONFIG DIALOG 0, 0, 196, 241
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Jumbo Container Crane Configurations"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,220,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,220,50,14
+    PUSHBUTTON      "Help",IDHELP,76,220,50,14
+    PUSHBUTTON      "Cabling Geometry",IDC_GEOM,20,180,158,13
+    GROUPBOX        "Geometric Design",IDC_STATIC,7,164,182,35
+    GROUPBOX        "Drive Design - Max Rating",IDC_STATIC,7,7,182,89
+    LTEXT           "Acceleration",IDC_STATIC,20,36,40,8
+    LTEXT           "Velocity",IDC_STATIC,34,50,26,8
+    LTEXT           "Max Position",IDC_STATIC,19,65,41,8
+    LTEXT           "Trolley",IDC_STATIC,65,20,22,8
+    LTEXT           "Hoisting",IDC_STATIC,105,20,26,8
+    LTEXT           "Wagons",IDC_STATIC,145,20,28,8
+    EDITTEXT        IDC_TXACC,65,34,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLACC,105,34,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WXACC,145,34,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TXVELOC,65,49,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLVELOC,105,49,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WXVELOC,145,49,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TXMAX,65,64,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLMAX,105,64,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WXMAX,145,64,35,12,ES_AUTOHSCROLL
+    CONTROL         "Keep Changes",IDC_SAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,203,65,13
+    CONTROL         "Default Off",IDC_SWAYINV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,113,59,11
+    COMBOBOX        IDC_SWAYCTRL,84,112,40,44,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Default Off",IDC_SKEWINV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,129,59,11
+    COMBOBOX        IDC_SKEWCTRL,84,127,40,44,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Default Off",IDC_SWINGINV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,145,59,11
+    COMBOBOX        IDC_SWINGCTRL,84,143,40,44,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sway Control",IDC_STATIC,39,115,42,8
+    LTEXT           "Skew Control",IDC_STATIC,38,130,43,8
+    LTEXT           "Swing Control",IDC_STATIC,36,144,44,8
+    GROUPBOX        "Automatic Controllers",IDC_STATIC,7,100,182,63
+    LTEXT           "Min Position",IDC_STATIC,21,80,39,8
+    EDITTEXT        IDC_TXMIN,65,79,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLMIN,105,79,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WXMIN,145,79,35,12,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_GEOM DIALOG 0, 0, 258, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Jumbo Container Crane Cabling Geometry"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,208,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,201,208,50,14
+    CONTROL         IDB_GEOM,IDC_STATIC,"Static",SS_BITMAP,7,7,244,154
+    GROUPBOX        "Trolley Cabling Geometry",IDC_STATIC,7,7,244,79
+    GROUPBOX        "Spreader Cabling Geometry",IDC_STATIC,7,87,244,71
+    EDITTEXT        IDC_A12,108,45,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A23,68,26,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A14,67,67,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_C23,67,101,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_C14,67,141,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_C12,108,121,40,12,ES_AUTOHSCROLL
+    LTEXT           "Stiffness",IDC_STATIC,50,175,28,8
+    LTEXT           "Damping",IDC_STATIC,49,188,29,8
+    EDITTEXT        IDC_KS,83,172,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KD,83,186,104,12,ES_AUTOHSCROLL
+    LTEXT           "N/m",IDC_STATIC,192,174,15,8
+    LTEXT           "N/ms",IDC_STATIC,191,188,18,8
+    GROUPBOX        "Cable Dynamic Characteristics",IDC_STATIC,7,161,244,43
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Transportation Equipment Control (TEC)"
+            VALUE "FileDescription", "jccvrml MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "jccvrml"
+            VALUE "LegalCopyright", "Copyright (C) 2000"
+            VALUE "OriginalFilename", "jccvrml.EXE"
+            VALUE "ProductName", "jccvrml Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_JCCVRML_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 475
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_PASSWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_GEOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CONFIG DLGINIT
+BEGIN
+    IDC_SWAYCTRL, 0x403, 3, 0
+0x6f6e, "\000" 
+    IDC_SWAYCTRL, 0x403, 2, 0
+0x0031, 
+    IDC_SWAYCTRL, 0x403, 2, 0
+0x0032, 
+    IDC_SWAYCTRL, 0x403, 2, 0
+0x0033, 
+    IDC_SWAYCTRL, 0x403, 2, 0
+0x0034, 
+    IDC_SKEWCTRL, 0x403, 3, 0
+0x6f6e, "\000" 
+    IDC_SKEWCTRL, 0x403, 2, 0
+0x0031, 
+    IDC_SKEWCTRL, 0x403, 2, 0
+0x0032, 
+    IDC_SKEWCTRL, 0x403, 2, 0
+0x0033, 
+    IDC_SKEWCTRL, 0x403, 2, 0
+0x0034, 
+    IDC_SWINGCTRL, 0x403, 3, 0
+0x6f6e, "\000" 
+    IDC_SWINGCTRL, 0x403, 2, 0
+0x0031, 
+    IDC_SWINGCTRL, 0x403, 2, 0
+0x0032, 
+    IDC_SWINGCTRL, 0x403, 2, 0
+0x0033, 
+    IDC_SWINGCTRL, 0x403, 2, 0
+0x0034, 
+    0
+END
+
+IDD_JCCVRML_DIALOG DLGINIT
+BEGIN
+    ID_CORTONA_CONTROL, 0x376, 606, 0
+0x0000, 0x0000, 0x6f43, 0x7472, 0x3c76, 0x0000, 0x34eb, 0x0000, 0x0003, 
+0x0009, 0x0000, 0x0002, 0x0001, 0x0003, 0x000d, 0x0000, 0x0002, 0x0000, 
+0x0003, 0x0010, 0x0000, 0x000b, 0x0000, 0x0003, 0x0011, 0x0000, 0x000b, 
+0x0000, 0x0003, 0x0012, 0x0000, 0x000b, 0xffff, 0x0003, 0x0013, 0x0000, 
+0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 
+0x0003, 0x0014, 0x0000, 0x0008, 0x0022, 0x0000, 0x0044, 0x0069, 0x0072, 
+0x0065, 0x0063, 0x0074, 0x0058, 0x0020, 0x0052, 0x0065, 0x006e, 0x0064, 
+0x0065, 0x0072, 0x0065, 0x0072, 0x0000, 0x0003, 0x0015, 0x0000, 0x0003, 
+0x1620, 0x0000, 0x0003, 0x0006, 0x0000, 0x000b, 0x0000, 0x0003, 0x001d, 
+0x0000, 0x0002, 0x0000, 0x0003, 0x0007, 0x0000, 0x000b, 0xffff, 0x0003, 
+0x0008, 0x0000, 0x0002, 0x0001, 0x0003, 0x000b, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0003, 0x000c, 0x0000, 0x000b, 0x0000, 0x0003, 0x000e, 0x0000, 
+0x0003, 0x0002, 0x0000, 0x0003, 0xfe0b, 0xffff, 0x0013, 0xb8b8, 0x00b8, 
+0x0003, 0x0017, 0x0000, 0x000b, 0xffff, 0x0003, 0x0018, 0x0000, 0x000b, 
+0xffff, 0x0003, 0x001b, 0x0000, 0x0008, 0x0010, 0x0000, 0x0023, 0x0062, 
+0x0038, 0x0062, 0x0038, 0x0062, 0x0038, 0x0000, 0x0003, 0x001c, 0x0000, 
+0x0008, 0x000a, 0x0000, 0x0054, 0x0052, 0x0055, 0x0045, 0x0000, 0x0003, 
+0x001e, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0003, 0x001f, 0x0000, 
+0x000b, 0xffff, 0x0003, 0x0020, 0x0000, 0x0002, 0x0000, 0x0003, 0xfdf8, 
+0xffff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0021, 0x0000, 0x0002, 0x0050, 
+0x0003, 0x0023, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0029, 0x0000, 
+0x0008, 0x004e, 0x0000, 0x007b, 0x0031, 0x0037, 0x0030, 0x0036, 0x0042, 
+0x0032, 0x0036, 0x0035, 0x002d, 0x0045, 0x0031, 0x0030, 0x0033, 0x002d, 
+0x0034, 0x0033, 0x0033, 0x0032, 0x002d, 0x0039, 0x0038, 0x0037, 0x0031, 
+0x002d, 0x0037, 0x0046, 0x0045, 0x0045, 0x0036, 0x0043, 0x0033, 0x0037, 
+0x0043, 0x0036, 0x0039, 0x0039, 0x007d, 0x0000, 0x0003, 0x002b, 0x0000, 
+0x0008, 0x000a, 0x0000, 0x0070, 0x006c, 0x0061, 0x006e, 0x0000, 0x0003, 
+0x002d, 0x0000, 0x0008, 0x000a, 0x0000, 0x0057, 0x0041, 0x004c, 0x004b, 
+0x0000, 0x0003, 0x002e, 0x0000, 0x0003, 0x0007, 0x0000, 0x0003, 0x002f, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0003, 0x0030, 0x0000, 0x0003, 
+0x0000, 0x0000, 0x0003, 0x0031, 0x0000, 0x000b, 0x0000, 0x0003, 0x0036, 
+0x0000, 0x000b, 0x0000, 0x0003, 0x0038, 0x0000, 0x0004, 0x0000, 0x0000, 
+0x0003, 0x0039, 0x0000, 0x0013, 0xe8e8, 0x00e8, 0x0003, 0x003a, 0x0000, 
+0x0003, 0x0001, 0x0000, 0x0003, 0xffff, 0xffff, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GEOM                BITMAP                  "res\\geom.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_JCCVRML_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\jccvrml.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

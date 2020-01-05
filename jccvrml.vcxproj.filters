@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ecaa78b2-b88f-4029-b04d-67059f432a3f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3c80848a-83d3-4108-a56d-75c7c2584d8d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{24ccf57d-4137-475f-a562-dad05504d3cc}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Help">
+      <UniqueIdentifier>{153fa584-a321-4130-9d60-7bbb5db1dcb4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CableGeom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JCCJoy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JCConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jccvrml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jccvrmlDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cortonactl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CortonaEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="jccvrml.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CableGeom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JCCJoy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JCConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jccvrml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jccvrmlDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cortona_support.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CortonaControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cortonactl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CortonaDispatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CortonaEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlp\HTMLDefines.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+    <ClInclude Include="hlp\MAPDefines.h">
+      <Filter>Help</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\geom.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\jccvrml.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\jccvrml.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="hlp\Jccvrml.chm">
+      <Filter>Help</Filter>
+    </None>
+    <None Include="hlp\Jccvrml.hhc">
+      <Filter>Help</Filter>
+    </None>
+    <None Include="hlp\Jccvrml.hhk">
+      <Filter>Help</Filter>
+    </None>
+    <None Include="hlp\Jccvrml_main.htm">
+      <Filter>Help</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\CortonaControl.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+    <Midl Include="C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\CortonaDispatch.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+    <Midl Include="C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\Cortona_support.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+    <Midl Include="C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\Shelley.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\Jccvrml.hhp">
+      <Filter>Help</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
