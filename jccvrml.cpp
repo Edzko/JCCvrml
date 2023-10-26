@@ -81,7 +81,7 @@ BOOL CJccvrmlApp::InitInstance()
 	CString pw, val;
 	CWinApp *WinApp = AfxGetApp();
 	CTime ToDay = CTime::GetCurrentTime();
-	CTime Expires(2020,12,31,0,0,0); 
+	CTime Expires(2025,12,31,0,0,0); 
 
 	AfxEnableControlContainer();
 

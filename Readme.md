@@ -19,9 +19,27 @@ It is built with Visual Studio 2017 with MFC extensions, and tested on Windows 1
 
 ## User Guide ##
 
-
 ![](hlp/jccvrml_gui.png)
+
+Although the initial view is from the side of the crane as seen in the above Figure, the primary perspective for the Crane Simulator is from the Crane Master's perspective - in the Trolley above the container, riding along on the boom. Any conventional game controller can be used to control the trolley motion and container hoisting.
+
+The Simulator therefore supports multiple:
+
+1. From the Side - Initial view
+2. From the Top - Perspective from the top down
+3. From the Front - Perspective from the Sea side
+4. The Crane Master - As if in the seat on the controls of the trolley
+5. Follow the Trolley - Side view from the trolley, riding along the boom.
+
+The three primary harmonic motions that are introduced when moving the container are:
+
+1. Swing - harmonic motion perpendicular to the boom direction
+2. Sway - harmonic motion along the boom direction
+3. Skew - rotational harmonic motion in the vertical direction
+
+The compensation motions controllers can be activated via the game controller buttons.
+
 
 ## Contact ##
 
-For any further inqueries, contact Edzko Smid.
+For any further inquiries, contact [Edzko Smid](mailto:Edzko.Smid@tecontrol.us "G. Edzko Smid, Ph.D.").
